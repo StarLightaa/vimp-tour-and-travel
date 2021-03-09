@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Landing page | Name</title>
+    <title>Travel</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">
+        <div class="container header__container">
+            <a class="logo" href="/">
+                <img src="img/logo.svg" alt="Логотип сайта Travel">
+            </a>
+            <nav class="navi header__navi">
+                <a class="navi__link navi__link--active" href="#">Home</a>
+                <a class="navi__link" href="#">Destinations</a>
+                <a class="navi__link" href="#">About</a>
+                <a class="navi__link" href="#">Partner</a>
+            </nav>
 
+            <div class="header__btns">
+                <a class="btn btn--ghost" href="#">Login</a>
+                <a class="btn" href="#">Register</a>
+            </div>
         </div>
-        <nav class="menu">
-
-        </nav>
     </header>
 
     <script src="js/main.min.js"></script>

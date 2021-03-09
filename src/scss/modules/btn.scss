@@ -1,0 +1,18 @@
+.btn {
+    display: inline-block;
+    background-color: $color-accent;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    min-width: 132px;
+    padding: 12px 36px;
+    border: 1px solid $color-accent;
+
+    &--ghost {
+        background-color: transparent;
+        color: $color-accent;
+    }
+}

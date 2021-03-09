@@ -1,0 +1,16 @@
+.navi {
+    display: flex;
+    // column-gap: 34px;
+    &__link {
+        line-height: 19px;
+        color: $color-gray;
+        text-decoration: none;
+        // margin: 0 17px;
+        margin-right: 34px;
+
+        &--active {
+            color: $color-dark;
+            font-weight: 500;
+        }
+    }
+}

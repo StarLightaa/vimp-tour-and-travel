@@ -1,10 +1,40 @@
 @import "fonts";
 @import "vars";
 
-*, 
-*::before,
-*::after {
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-// @import 'modules/header.scss';
+html {
+    line-height: 1;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    // font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+@import 'modules/header.scss';
+@import 'modules/logo.scss';
+@import 'modules/navigation.scss';
+@import 'modules/btn.scss';
