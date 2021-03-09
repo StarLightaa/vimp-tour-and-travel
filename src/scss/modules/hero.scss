@@ -1,0 +1,49 @@
+.hero {
+    position: relative;
+    &::before, &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &::before {
+        background-image: url(../../img/element3.svg);
+        width: 20px;
+        height: 20px;
+        top: 14%;
+        left: 42%;
+        z-index: 2;
+    }
+
+    &::after {
+        background-image: url(../../img/element2.svg);
+        width: 26px;
+        height: 26px;
+        top: 374px;
+        left: 231px;
+        z-index: 2;
+    }
+
+    &__container {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        padding-top: 47px;
+    }
+
+    &__left {
+        width: 470px;
+        padding-top: 33px;
+    }
+
+    &__right {}
+
+    &__image {
+        max-width: 687px;
+        transform: translateX(147px);
+        width: 100%;
+    }
+}

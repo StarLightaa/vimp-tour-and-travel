@@ -9,11 +9,11 @@
 
 html {
     line-height: 1;
+    overflow-x: hidden;
 }
 
 body {
     font-family: 'Inter', sans-serif;
-    // font-family: 'Playfair Display', serif;
     font-style: normal;
     font-size: 16px;
     font-weight: normal;
@@ -34,7 +34,20 @@ img {
     width: 100%;
 }
 
+.page-title {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 74px;
+    color: $color-dark;
+}
+
 @import 'modules/header.scss';
 @import 'modules/logo.scss';
 @import 'modules/navigation.scss';
 @import 'modules/btn.scss';
+
+@import 'modules/hero.scss';
+@import 'modules/form.scss';

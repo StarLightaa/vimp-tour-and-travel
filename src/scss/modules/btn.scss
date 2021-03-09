@@ -15,4 +15,10 @@
         background-color: transparent;
         color: $color-accent;
     }
+
+    &--form {
+        min-width: 180px;
+        font-weight: 600;
+        padding: 16px 36px;
+    }
 }
