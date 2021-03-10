@@ -1916,3 +1916,101 @@ img {
             justify-content: center;
   }
 }
+
+.footer {
+  color: #848484;
+  background-color: #F9F9FB;
+  padding-top: 78px;
+}
+
+.footer__top {
+  padding-bottom: 77px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+@media (min-width: 768px) {
+  .footer__row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: minmax(270px, 500px) (minmax(-webkit-min-content, 270px))[2] auto;
+    -ms-grid-columns: minmax(270px, 500px) (minmax(min-content, 270px))[2] auto;
+    grid-template-columns: minmax(270px, 500px) repeat(2, minmax(-webkit-min-content, 270px)) auto;
+    grid-template-columns: minmax(270px, 500px) repeat(2, minmax(min-content, 270px)) auto;
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__order {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 26px;
+}
+
+.footer__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 55px;
+}
+
+.footer__text:last-child {
+  margin-bottom: 0;
+}
+
+.f-menu__title {
+  font-size: 19px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.f-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 35px;
+}
+
+.f-menu__item {
+  margin-bottom: 15px;
+}
+
+.f-menu__item a {
+  color: #848484;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.footer__icons {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 35px;
+     -moz-column-gap: 35px;
+          column-gap: 35px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  padding: 30px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(20px, -webkit-min-content));
+  grid-template-columns: repeat(auto-fit, minmax(20px, min-content));
+}
+
+.footer__icons a {
+  display: inline-block;
+}
+
+.footer__icons a:hover svg path, .footer__icons a:active svg path {
+  fill: #FB8F1D;
+}
