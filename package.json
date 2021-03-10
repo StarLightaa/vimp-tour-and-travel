@@ -24,6 +24,7 @@
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
-    "fullpage": "^1.5.1"
+    "fullpage": "^1.5.1",
+    "swiper": "^6.5.0"
   }
 }

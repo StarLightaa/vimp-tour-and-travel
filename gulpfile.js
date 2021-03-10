@@ -43,6 +43,7 @@ function images() {
 function styles() {
     return src([
         'node_modules/normalize.css/normalize.css',
+        'node_modules/swiper/swiper-bundle.min.css',
         'src/scss/style.scss'
     ])
         .pipe(scss({outputStyle: 'expanded'}))
@@ -67,6 +68,7 @@ function styles() {
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/swiper/swiper-bundle.min.js',
         'src/js/main.js'
     ])
     .pipe(concat('main.min.js'))

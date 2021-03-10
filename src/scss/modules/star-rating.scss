@@ -1,0 +1,8 @@
+.star-rating {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25px);
+    column-gap: 16px;
+    @include media-max(992px) {
+        justify-content: center;
+    }
+}

@@ -8,3 +8,10 @@ menuBtn.addEventListener('click', function() {
     menu.classList.toggle('menu--active');
 })
 
+const swiper = new Swiper('.swiper-container', {
+    // Navigation arrows
+    navigation: {
+      nextEl: '.reviews-arrow-next',
+      prevEl: '.reviews-arrow-prev',
+    },
+});
