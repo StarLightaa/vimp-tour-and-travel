@@ -7,4 +7,7 @@
         line-height: 50px;
         color: #000;
     }
+    @include media-max(992px) {
+        padding: 65px 0;
+    }
 }

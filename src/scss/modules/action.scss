@@ -49,12 +49,17 @@
         flex: 0 0 100%;
         transform: translateX(-50%);
         text-align: right;
+        @include media-max(992px) {
+            display: none;
+        }
     }
 
     &__body {
-        padding: 96px 58px 111px 102px;
-        flex: 0 0 50%;
-        transform: translateX(-100%);
+        @include media-min(992px) {
+            padding: 96px 58px 111px 102px;
+            transform: translateX(-100%);
+            flex: 0 0 50%;
+        }
     }
 
     &__title {
@@ -84,8 +89,12 @@
             }
         }
         .action__body {
-            transform: translateX(100%);
-            padding: 152px 120px 93px 49px;
+            @include media-min(992px) {
+                padding: 96px 58px 111px 102px;
+                transform: translateX(100%);
+                padding: 152px 120px 93px 49px;
+            }
+            
         }
     }
 }
