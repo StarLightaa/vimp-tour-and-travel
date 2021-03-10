@@ -1,4 +1,6 @@
 .posts {
+    padding-top: 149px;
+    padding-bottom: 91px;
     &__inner {
         display: flex;
         gap: 25px;
@@ -22,7 +24,7 @@
 
     &__body {
         position: absolute;
-        bottom: 0;
+        bottom: -4px;
         left: 0;
         min-width: 50%;
         background-color: #fff;

@@ -1053,6 +1053,7 @@ body {
   font-size: 16px;
   font-weight: normal;
   overflow-x: hidden;
+  padding-top: 120px;
 }
 
 img {
@@ -1126,6 +1127,21 @@ img {
 
 .header {
   padding: 43px 0 36px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 5;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.header--sticky {
+  padding: 15px 0;
+  -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.19);
+          box-shadow: 0 2px 7px rgba(0, 0, 0, 0.19);
 }
 
 .header__container {
@@ -1183,11 +1199,22 @@ img {
   min-width: 132px;
   padding: 12px 36px;
   border: 1px solid #FB8F1D;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #e17504;
 }
 
 .btn--ghost {
   background-color: transparent;
   color: #FB8F1D;
+}
+
+.btn--ghost:hover, .btn--ghost:focus {
+  color: #fff;
 }
 
 .btn--form {
@@ -1222,6 +1249,11 @@ img {
     z-index: 2;
     background-color: #fff;
     padding: 90px 15px 35px;
+    -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.19);
+            box-shadow: 0 2px 7px rgba(0, 0, 0, 0.19);
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
   }
   .menu--active .navi {
     margin-bottom: 30px;
@@ -1332,6 +1364,7 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: -1;
 }
 
 .hero::before {
@@ -1350,6 +1383,7 @@ img {
   top: 374px;
   left: 231px;
   z-index: 2;
+  z-index: -1;
 }
 
 .hero__container {
@@ -1599,6 +1633,11 @@ img {
   }
 }
 
+.posts {
+  padding-top: 149px;
+  padding-bottom: 91px;
+}
+
 .posts__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1629,7 +1668,7 @@ img {
 
 .post__body {
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
   left: 0;
   min-width: 50%;
   background-color: #fff;
@@ -1736,6 +1775,10 @@ img {
   background-size: contain;
   background-position: 50% 50%;
   margin-left: 11px;
+}
+
+.reviews {
+  padding-top: 108px;
 }
 
 .reviews__inner {
@@ -2003,8 +2046,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(20px, -webkit-min-content));
-  grid-template-columns: repeat(auto-fit, minmax(20px, min-content));
+  grid-template-columns: repeat(auto-fit, minmax(10px, -webkit-min-content));
+  grid-template-columns: repeat(auto-fit, minmax(10px, min-content));
 }
 
 .footer__icons a {

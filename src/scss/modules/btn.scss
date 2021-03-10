@@ -10,10 +10,18 @@
     min-width: 132px;
     padding: 12px 36px;
     border: 1px solid $color-accent;
+    transition: all .3s linear;
+
+    &:hover, &:focus {
+        background-color: darken($color-accent, 10%);
+    }
 
     &--ghost {
         background-color: transparent;
         color: $color-accent;
+        &:hover, &:focus {
+            color: #fff;
+        }
     }
 
     &--form {

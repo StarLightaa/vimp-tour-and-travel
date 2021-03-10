@@ -15,3 +15,15 @@ const swiper = new Swiper('.swiper-container', {
       prevEl: '.reviews-arrow-prev',
     },
 });
+
+let waypoint = new Waypoint({
+    element: document.getElementById('header-mark'),
+    handler: function(direction) {
+        let header = document.querySelector('.header');
+        if(direction === 'down') {
+            header.classList.add('header--sticky');
+        } else {
+            header.classList.remove('header--sticky');
+        }
+    }
+  })

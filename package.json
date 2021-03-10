@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "fullpage": "^1.5.1",
-    "swiper": "^6.5.0"
+    "swiper": "^6.5.0",
+    "waypoints": "^4.0.1"
   }
 }

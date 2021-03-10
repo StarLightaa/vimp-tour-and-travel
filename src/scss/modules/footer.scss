@@ -67,7 +67,7 @@
     align-items: end;
     padding: 30px 0;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(20px, min-content));
+    grid-template-columns: repeat(auto-fit, minmax(10px, min-content));
     a {
         display: inline-block;
         &:hover, &:active {

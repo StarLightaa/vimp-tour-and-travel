@@ -1,5 +1,17 @@
 .header {
     padding: 43px 0 36px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 5;
+    transition: all .3s linear;
+
+    &--sticky {
+        padding: 15px 0;
+        box-shadow: 0 2px 7px rgba(#000, .19);
+    }
 
     &__container {
         display: flex;
