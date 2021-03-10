@@ -1,0 +1,10 @@
+.section {
+    padding: 143px 0;
+    &__title {
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 50px;
+        color: #000;
+    }
+}

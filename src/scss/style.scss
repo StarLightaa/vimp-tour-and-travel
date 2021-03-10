@@ -40,7 +40,7 @@ img {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 64px;
-    line-height: 1.2;
+    line-height: 1.25;
     margin-bottom: 74px;
     color: $color-dark;
 
@@ -50,6 +50,7 @@ img {
     }
 }
 
+@import 'modules/section.scss';
 @import 'modules/header.scss';
 @import 'modules/logo.scss';
 @import 'modules/navigation.scss';
@@ -58,3 +59,6 @@ img {
 
 @import 'modules/hero.scss';
 @import 'modules/form.scss';
+
+
+@import 'modules/action.scss';
