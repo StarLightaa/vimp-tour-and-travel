@@ -410,6 +410,21 @@ img {
   }
 }
 
+.section__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+  margin-bottom: 56px;
+}
+
+.section__head .view-all {
+  margin-left: auto;
+}
+
 .header {
   padding: 43px 0 36px;
 }
@@ -883,4 +898,120 @@ img {
             transform: translateX(100%);
     padding: 152px 120px 93px 49px;
   }
+}
+
+.posts__inner {
+  padding: 0 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 25px;
+     -moz-column-gap: 25px;
+          column-gap: 25px;
+}
+
+.post {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.post__body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  min-width: 50%;
+  background-color: #fff;
+  border-radius: 0 6px 0 0;
+  padding-top: 11px;
+  padding-right: 22px;
+}
+
+.post__title {
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #202336;
+}
+
+.post__subtitle {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #80918E;
+}
+
+.post-stories {
+  width: 263px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.post-stories__img {
+  margin-bottom: 13px;
+  padding-top: 89%;
+  position: relative;
+}
+
+.post-stories__img img {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.post-stories__title {
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 13px;
+}
+
+.post-stories__subtitle {
+  font-size: 15px;
+  line-height: 26px;
+  color: #7D7987;
+  margin-bottom: 23px;
+}
+
+.post-stories__link {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 28px;
+  color: #FB8F1D;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.view-all {
+  display: inline-block;
+  position: relative;
+  font-size: 17px;
+  color: #FB8F1D;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.view-all::after {
+  width: 6px;
+  height: 12px;
+  content: '';
+  display: inline-block;
+  background-image: url(../../img/arrow-link.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  margin-left: 11px;
 }

@@ -1,0 +1,20 @@
+.view-all {
+    display: inline-block;
+    position: relative;
+    font-size: 17px;
+    color: $color-accent;
+    font-weight: 600;
+    text-decoration: none;
+
+    &::after {
+        width: 6px;
+        height: 12px;
+        content: '';
+        display: inline-block;
+        background-image: url(../../img/arrow-link.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 50%;
+        margin-left: 11px;
+    }
+}

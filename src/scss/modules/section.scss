@@ -10,4 +10,15 @@
     @include media-max(992px) {
         padding: 65px 0;
     }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        padding: 0 50px;
+        margin-bottom: 56px;
+
+        .view-all {
+            margin-left: auto;
+        }
+    }
 }
