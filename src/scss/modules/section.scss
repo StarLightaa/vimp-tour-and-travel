@@ -14,8 +14,11 @@
     &__head {
         display: flex;
         align-items: center;
-        padding: 0 50px;
         margin-bottom: 56px;
+
+        @include media-min(992px) {
+            padding: 0 50px;
+        }
 
         .view-all {
             margin-left: auto;
