@@ -380,9 +380,16 @@ img {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 64px;
-  line-height: 80px;
+  line-height: 1.2;
   margin-bottom: 74px;
   color: #202336;
+}
+
+@media (max-width: 992px) {
+  .page-title {
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
 }
 
 .header {
@@ -410,6 +417,8 @@ img {
   width: 41px;
   height: 41px;
   display: inline-block;
+  position: relative;
+  z-index: 3;
 }
 
 .navi {
@@ -453,6 +462,130 @@ img {
   min-width: 180px;
   font-weight: 600;
   padding: 16px 36px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu--active {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #fff;
+    padding: 90px 15px 35px;
+  }
+  .menu--active .navi {
+    margin-bottom: 30px;
+    display: block;
+  }
+  .menu--active .navi__link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+  .menu--active .navi__link:hover, .menu--active .navi__link:focus {
+    background-color: #fafafa;
+  }
+  .menu--active .header__btns {
+    text-align: center;
+    margin-left: 0;
+  }
+  .menu--active .header__btns .btn {
+    margin-bottom: 10px;
+  }
+  .menu--active .header__btns .btn + .btn {
+    margin: 0 7px;
+  }
+}
+
+.menu-toggle {
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  width: 30px;
+  height: 25px;
+  position: relative;
+  z-index: 3;
+  margin-left: auto;
+  background-color: transparent;
+}
+
+@media (min-width: 801px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle::before, .menu-toggle::after, .menu-toggle span {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #202336;
+  left: 0;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.menu-toggle::before {
+  top: 0;
+}
+
+.menu-toggle::after {
+  bottom: 0;
+}
+
+.menu-toggle span {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.menu-toggle--active span {
+  opacity: 0;
+}
+
+.menu-toggle--active::before {
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 6px;
+  top: 1px;
+}
+
+.menu-toggle--active::after {
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 6px;
 }
 
 .hero {
@@ -500,6 +633,27 @@ img {
   padding-top: 33px;
 }
 
+@media (max-width: 800px) {
+  .hero__left {
+    width: 100%;
+  }
+}
+
+.hero__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 800px) {
+  .hero__right {
+    display: none;
+  }
+}
+
 .hero__image {
   max-width: 687px;
   -webkit-transform: translateX(147px);
@@ -514,6 +668,12 @@ img {
   line-height: 27px;
   color: #202336;
   margin-bottom: 48px;
+}
+
+@media (max-width: 992px) {
+  .form__title {
+    margin-bottom: 35px;
+  }
 }
 
 .form__title::after {
@@ -535,6 +695,14 @@ img {
   margin: 0 -15px 17px;
 }
 
+@media (max-width: 580px) {
+  .form__items {
+    display: block;
+    width: 100%;
+    margin: 0 0 17px;
+  }
+}
+
 .form__item-wrap {
   position: relative;
   width: calc(50% - 30px);
@@ -542,6 +710,13 @@ img {
   overflow: hidden;
   border: 1px solid #AFB0B9;
   border-radius: 6px;
+}
+
+@media (max-width: 580px) {
+  .form__item-wrap {
+    width: 100%;
+    margin: 0 0 35px;
+  }
 }
 
 .form__item-wrap::after {

@@ -6,6 +6,10 @@
         color: $color-dark;
         margin-bottom: 48px;
 
+        @include media-max(992px) {
+            margin-bottom: 35px;
+        }
+
         &::after {
             content: '';
             display: block;
@@ -21,6 +25,12 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 -15px 17px;
+
+        @include media-max(580px) {
+            display: block;
+            width: 100%;
+            margin: 0 0 17px;
+        }
     }
 
     &__item-wrap {
@@ -30,6 +40,11 @@
         overflow: hidden;
         border: 1px solid #AFB0B9;
         border-radius: 6px;
+
+        @include media-max(580px) {
+            width: 100%;
+            margin: 0 0 35px;
+        }
 
         &::after {
             content: "";

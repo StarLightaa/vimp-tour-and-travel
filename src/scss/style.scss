@@ -1,5 +1,6 @@
 @import "fonts";
 @import "vars";
+@import "mixins";
 
 *, *::before, *::after {
     margin: 0;
@@ -39,15 +40,21 @@ img {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 64px;
-    line-height: 80px;
+    line-height: 1.2;
     margin-bottom: 74px;
     color: $color-dark;
+
+    @include media-max(992px) {
+        font-size: 45px;
+        margin-bottom: 40px;
+    }
 }
 
 @import 'modules/header.scss';
 @import 'modules/logo.scss';
 @import 'modules/navigation.scss';
 @import 'modules/btn.scss';
+@import 'modules/menu.scss';
 
 @import 'modules/hero.scss';
 @import 'modules/form.scss';
